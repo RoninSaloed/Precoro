@@ -1,11 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ScHeader from "./components/header/ScHeader.vue";
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p class="text-clip">
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <ScHeader />
 </template>
 
 <style scoped></style>
