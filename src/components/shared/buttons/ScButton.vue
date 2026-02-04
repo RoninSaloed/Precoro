@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="handleClick()"
+    @click.prevent="handleClick()"
     :class="[
       'rounded-[20px] px-4 py-[5px] font-inter text-white-color',
       disabled ? 'bg-disabled-color' : 'bg-blue-color',
