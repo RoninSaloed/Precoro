@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full justify-between bg-top-bar-gradient py-2 pl-6 pr-4">
+  <div class="flex w-full justify-between bg-top-bar-gradient py-2 pl-6 pr-4 font-medium">
     <div class="flex items-center">
       <div class="mr-[17px] font-inter text-white-color">Dashboard</div>
       <div class="mr-[17px]"><ArrowIcon /></div>

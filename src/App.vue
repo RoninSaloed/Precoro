@@ -17,7 +17,7 @@ const handleDateRangeChange = (dates: Date[] | null) => {};
     <div class="mb-[14px]"><ScHeader /></div>
     <div class="mb-[15px] w-full px-6">
       <div class="flex items-center justify-between">
-        <span class="text-inter text-xl text-blue-color">Vacation Mode Settings</span>
+        <span class="text-inter text-xl font-bold text-blue-color">Vacation Mode Settings</span>
 
         <ScTooltip>
           <div><ScButton :disabled="true" title="Update" /></div>
@@ -30,15 +30,28 @@ const handleDateRangeChange = (dates: Date[] | null) => {};
     </div>
     <div class="mb-6"><Line /></div>
     <div class="w-full px-6">
-      <div class="flex flex-wrap justify-between">
+      <div class="mb-5 flex flex-wrap justify-between">
         <div class="flex-col">
           <div class="flex items-center">
-            <div class="mb-1 mr-[6px] font-inter text-blue-color">Substitute User</div>
+            <div class="mb-1 mr-[6px] font-inter font-semibold text-blue-color">Vacation mode</div>
             <div><ActionItem :disabled="false" /></div>
           </div>
 
-          <div class="text-secondary-text-color font-inter text-sm text-blue-color">
+          <div class="text-secondary-text-color font-inter text-sm font-medium text-blue-color">
             Select Date, Substitute User and Backup Approver to Enable Vacation Mode.
+          </div>
+        </div>
+        <div><DatePicker v-model="selectedDates" @change="handleDateRangeChange" /></div>
+      </div>
+
+      <div class="mb-5"><Line /></div>
+
+      <div class="mb-5 flex flex-wrap justify-between">
+        <div class="flex-col">
+          <div class="mb-1 mr-[6px] font-inter font-semibold text-blue-color">Substitute User</div>
+
+          <div class="text-secondary-text-color font-inter text-sm font-medium text-blue-color">
+            Performs approval actions while you are away.
           </div>
         </div>
         <div><DatePicker v-model="selectedDates" @change="handleDateRangeChange" /></div>
