@@ -17,6 +17,10 @@ module.exports = {
         "green-color": "#00A338",
         "blur-green": "#E1F6E9",
         "blur-gray": "#EEF0F6",
+        "borders-color": "rgba(29, 36, 82, 0.3)",
+        "error-color": "#F5455A",
+        "table-header": "#555B7D",
+        "green-color": "#3FB34F",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
