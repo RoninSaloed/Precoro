@@ -242,7 +242,6 @@ const handleSaveAll = async () => {
 
   if (!apiError.value) {
     window.removeEventListener("beforeunload", handleBeforeUnload);
-    window.location.reload();
   }
 };
 
