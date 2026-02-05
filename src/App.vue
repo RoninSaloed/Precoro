@@ -4,7 +4,6 @@
     <div class="mb-[15px] w-full px-6">
       <div class="flex items-center justify-between">
         <span class="text-inter text-xl font-bold text-blue-color">Vacation Mode Settings</span>
-
         <ScTooltip>
           <div>
             <ScButton

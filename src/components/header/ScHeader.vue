@@ -8,7 +8,7 @@
     <div class="flex items-center gap-x-7">
       <div v-for="item in headerItems" class="flex items-center">
         <span class="mr-[10px]">
-          <component :is="item.icon" />
+          <component :is="item.icon" :class="item.rotate ? 'rotate-90' : ''" />
         </span>
 
         <span class="mr-[17px] font-inter text-white-color">{{ item.title }}</span>
@@ -27,6 +27,6 @@ const headerItems = [
   { title: "Buy now", icon: BillIcon },
   { title: "Onboarding", icon: OnboardIcon },
   { title: "Help center", icon: BuoyIcon },
-  { title: "user@email.com", icon: ArrowIcon },
+  { title: "user@email.com", icon: ArrowIcon, rotate: true },
 ];
 </script>
